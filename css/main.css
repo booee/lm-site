@@ -422,11 +422,11 @@ html.no-preserve3d #items > div {
 }
 .book-buttons button {
     position: relative;
-    width: 240px;
+    width: 140px;
     font-size: 12px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 5px;
+    padding: 3px;
     background-color: transparent;
     border: 1px solid rgba(87, 87, 87, 0.4);
     outline: none;
