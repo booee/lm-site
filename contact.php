@@ -17,7 +17,7 @@ $body .="\n";
 $go = mail($to, $subject, $body, "From:<$from>");
 
 if($go) {
-	print("Success!");
+	header("Location: lennoxmccaskill.php");
 }
 else{
 	print("Unable to send!");
