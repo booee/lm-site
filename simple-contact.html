@@ -1,0 +1,79 @@
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lennox McCaskill: Author of The Colossal Series - Contact</title>
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800%7cCardo:400italic%7cMerriweather:400,300,300italic,400italic">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+    <!-- custom stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
+
+  </head>
+  <body>
+
+    <main>
+      <header id="header">
+
+          <!-- <nav class="navbar navbar-default navbar-fixed-top"></nav> -->
+
+          <div class="container">
+
+            <div class="contact-form">
+
+              <h1 class="text-center">Get in touch</h1>
+              <h3 class="text-center">Can't wait to hear from you. Blah blah blah, blah blah blah</h3>
+
+              <div class="form-wrapper form-1">
+                <form id="contact_form" action="javascript:submit()">
+                  <p id="error" class="subscription-failed"></p>
+                  <input id="form_name" type="text" name="name" placeholder="Your Name" class="contact-input">
+                  <input id="form_email" type="email" name="email" placeholder="Email Address" class="contact-input">
+                  <textarea id="form_body" name="body" placeholder="Message" class="contact-input"></textarea>
+                  <button class="btn btn-block custom-button">Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <script src="js/jquery-1.11.2.min.js"></script>
+          <script>
+            function submit() {
+              var name = $('#form_name').val()
+              var email = $('#form_email').val()
+              var body = $('#form_body').val()
+
+              var err = ''
+              if(!name) {
+                err = 'Please provide your name'
+              } else if(!email) {
+                err = 'Please provide your email address'
+              } else if(!body) {
+                err = 'Please provide a message body'
+              }
+
+              if(err) {
+                $('#error').html(err)
+              } else {
+                console.log('GOGOGO')
+                // TODO: submit via ajax
+                // https://docs.google.com/forms/d/e/1FAIpQLSfdA2jSxOXwZuSviyb9ovc0DDFwswSkpjvAulHfgrKUuaLAaw/formResponse?entry.1923351820=testparam&entry.1454119085=emailaddr&entry.1532490627=body
+              }
+            }
+          </script>
+
+      </header>
+    </main>
+
+  </body>
+</html>
