@@ -49,7 +49,7 @@
 
 <!-- 3. body starts -->
 
-<body>
+<body itemscope itemtype="http://schema.org/WebPage">
 
     <!-- Start: Preloader section -->
     <div id="loader-wrapper">
@@ -78,7 +78,7 @@
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div itemprop="breadcrumb" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active"><a href="#hero">Home<span class="sr-only">(current)</span></a></li>
                             <li><a data-scroll href="#author">Author</a></li> 
@@ -98,21 +98,21 @@
 
         <!-- Hero section starts-->
         <section id="hero" class="hero page">
-            <div class="details">
+            <div itemscope itemtype="http://schema.org/Book" class="details">
                 <div class="container-custom group">
                     <div class="package wow fadeInUp">
                         <!-- viewport -->
                         <div id="items">
                             <!-- cube -->
                             <div id="front" class="front">
-                                <img src="images/book/front-colossal.png" alt='cover art: Colossal by Lennox McCaskill'>
+                                <img itemprop="image" src="images/book/front-colossal.png" alt='cover art: Colossal by Lennox McCaskill'>
                             </div>
 
                             <div id="side" class="side">
                             </div>
 
                             <div id="back" class="back">
-                                <img src="images/book/back-colossal.png" alt='colossal-img'>
+                                <img itemprop="image" src="images/book/back-colossal.png" alt='colossal-img'>
                             </div>
                         </div>
                     </div>
@@ -141,7 +141,7 @@
                         <!-- Look Inside Content -->
                         <div id="test-popup" class="white-popup mfp-with-anim mfp-hide">
                             <div class="popup-header">
-                                <span class="popup-title">"Colossal:Issue #1" |</span><span> "Lennox McCaskill"</span>
+                                <span itemprop="name" class="popup-title">"Colossal:Issue #1" |</span><span itemprop="author"> "Lennox McCaskill"</span>
                             </div>
                             <div class="white-popup-inner">
                                 <div class="book-wrapper text-center">
@@ -173,9 +173,9 @@
 
                     <div class="features clearfix wow fadeInUp" data-wow-delay="0.3s">
                         <h3 class="text-center">Featured Work</h3>
-                        <h1 class="text-center">Colossal</h1>
-                        <h5 class="text-center">by Lennox McCaskill</h5>
-                        <p>
+                        <h1 itemprop="alternateName" class="text-center">Colossal</h1>
+                        <h5 itemprop="author" class="text-center">by Lennox McCaskill</h5>
+                        <p itemprop="disambiguatingDescription">
                             "Colossal" is a mystery that follows the journey of multiple characters that are unknowingly connected by a singular event. 
 			    Readers will be swiftly inserted into a crime scene with a very bizarre trail of evidence. Follow along as the vibrant characters in 
 			    "Colossal" unravel something much larger than any of them originally suspected.
@@ -247,10 +247,10 @@
                                 <h1 class="text-center">About<span>Lennox</span></h1>
                             </div>
                             <div class="col-md-5 col-md-offset-1 visible-xs visible-sm">
-                                <img src="images/author/lennox-bw.png" class="img-responsive" alt='published-img'>
+                                <img itemprop="image" src="images/author/lennox-bw.png" class="img-responsive" alt='published-img'>
                             </div>
-                            <div class="col-md-6">
-                                <p>A native of Atlanta, GA, Lennox McCaskill grew up drawing a number of characters and making up worlds for them to "live" in.</p>
+                            <div itemscope itemprop="Person" itemtype="http://schema.org/Person" class="col-md-6">
+                                <p itemprop="description">A native of Atlanta, GA, Lennox McCaskill grew up drawing a number of characters and making up worlds for them to "live" in.</p>
                                 <p>After completing a number of short stories, poetry, and articles published for an online magazine called The Hudsucker, McCaskill turned his primary attention to writing fiction.</p>
                    
 			    </div>
@@ -259,17 +259,17 @@
 				<p>Follow Lennox on Facebook and Twitter for news, book updates, contest, and more.</p>
                                 <ul class="author-social">
                                     <li class="wow fadeInLeft" data-wow-delay="0.3s">
-                                        <a href="https://www.facebook.com/lennoxmccaskill/" target="_blank"><i class="fa fa-facebook"></i></a>
+                                        <a itemprop="sameAs" href="https://www.facebook.com/lennoxmccaskill/" target="_blank"><i class="fa fa-facebook"></i></a>
                                     </li>
                                     <li class="wow fadeInLeft" data-wow-delay="0.5s">
-                                        <a href="https://twitter.com/LennoxMcCaskill" target="_blank"><i class="fa fa-twitter"></i></a>
+                                        <a itemprop="sameAs" href="https://twitter.com/LennoxMcCaskill" target="_blank"><i class="fa fa-twitter"></i></a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 hidden-xs hidden-sm">
-                        <img src="images/author/lennox-bw.png" class="img-responsive" alt='published-img'>
+                        <img itemprop="image" src="images/author/lennox-bw.png" class="img-responsive" alt='published-img'>
                     </div>
                 </div><!-- End: .row -->
             </div><!-- End: .container-->
@@ -295,8 +295,8 @@
                             <div class="row">
                                 <div class="carousel-inner" role="listbox">
                                     <div class="item active clearfix fadeInUp delay-2">
-                                        <div class="col-xs-12">
-                                            <blockquote>
+                                        <div itemprop="review" itemscope itemtype="http://schema.org/Review" class="col-xs-12">
+                                            <blockquote itemprop="reviewBody">
 
                                                 With the superhero culture at its prime, you might think this is just another origin tale of mighty heroes on the rise,
 						but it's quite the contrary. If you're a fan of real, in-depth characterization and strong story arcs fused with realism — this is the novel for you.
@@ -309,9 +309,9 @@
                                                 <div class="col-xs-2 col-xs-offset-4 col-sm-2 col-sm-offset-5 col-md-1 col-md-offset-6">
                                                     <span class="cite-img"><img src="images/book/tania-headshot.png" class="img-responsive" alt='published-img'></span>
                                                 </div>
-                                                <div class="col-xs-6 col-sm-5 col-md-5">
+                                                <div itemprop="review" itemscope itemtype="http://schema.org/Review" class="col-xs-6 col-sm-5 col-md-5">
                                                     <div class="cite-right">
-                                                        <span class="cite-name">Tania H.</span>
+                                                        <span itemprop="author" class="cite-name">Tania H.</span>
                                                         <span class="cite-url"><a href="https://www.goodreads.com/book/show/32928666-colossal?from_search=true"  target="_blank" rel="nofollow">goodreads.com</a></span>
                                                     </div>
                                                 </div>
