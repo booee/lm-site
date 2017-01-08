@@ -745,7 +745,7 @@ button.mfp-arrow {
     fill-opacity: 0.2;
 }
 .book-trailer svg:hover polygon {
-    
+
     stroke: none;
 }
 .book-trailer svg:hover path {
@@ -838,7 +838,7 @@ button.mfp-arrow {
 }
 #what-you-learn-carousel .carousel-indicators li.active {
     background-color: #ddd;
-    
+
 }
 .book-page-2{
     margin-top: 30px;

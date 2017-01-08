@@ -1,0 +1,30 @@
+.contact-form {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    height: 300px;
+}
+
+.contact-form-input {
+    display: block;
+    width: 100%;
+    border: 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-bottom: 20px;
+    background: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: .4s all;
+}
+.contact-form-input:last-of-type {
+    margin-bottom: 30px;
+}
+.contact-form-input:focus {
+    border-color: rgba(0, 0, 0, 0.7);
+    outline: 0;
+}
+
+#thankyou {
+  display: none;
+}
