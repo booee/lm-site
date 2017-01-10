@@ -288,7 +288,7 @@ $(function () {
         callback: mailchimpCallback,
 
         // Replace your mailchimp post url inside double quote "".  
-        url: "http://github.us12.list-manage.com/subscribe/post?u=f882ab586d827f13fb5b356d0&amp;id=224d934820"
+        url: "//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet"
 
     });
 
