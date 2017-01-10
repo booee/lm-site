@@ -1204,7 +1204,7 @@ p.subscription-success i.fa {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 14px;
-    color: #FF3B6B;
+    color: #DAA520;
     display: inline-block;
     width: auto;
     margin: 0 auto;
@@ -1857,5 +1857,5 @@ a span.img-caption {
 }
 .footer li a:hover{
     text-decoration:none;
-    color: #FF3B6B;
+    color: #DAA520;
 }
