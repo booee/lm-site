@@ -118,8 +118,8 @@
                         </div>
                     </div>
                     <div class="book-buttons">
-                        <button onClick="ga('send', 'event', [Book], [Flip], [Colossal]);"
-			class="flip-book book-button wow fadeInLeft" data-wow-delay="0.3s">
+                        <button	class="flip-book book-button wow fadeInLeft" data-wow-delay="0.3s"
+			onClick="ga('send', 'event', 'Book', 'Flip', 'Colossal');">
                             <i class="fa fa-exchange flip-icon"></i>
                             <span>flip to back</span>
                         </button>
@@ -127,7 +127,7 @@
                         <div class="enlarge wow fadeInLeft" data-wow-delay="0.6s">
                             <a class="front-img popup" href="images/book/colossal-front-large.png" data-effect="mfp-move-horizontal"></a>
                             <a class="back-img popup" href="images/book/colossal-back-large.png" data-effect="mfp-move-horizontal"></a>
-                            <button onClick="ga('send', 'event', [Book], [Enlarge], [Colossal]);"
+                            <button onClick="ga('send', 'event', 'Book', 'Enlarge', 'Colossal');"
 				class="book-button">
                                 <i class="fa fa-expand"></i>
                                 <span>enlarge</span>
@@ -138,7 +138,7 @@
                         <ul id="inline-popups" class="look-inside wow fadeInLeft" data-wow-delay="0.9s">
                             <li>
                                 <i class="fa fa-search-plus"></i>
-                                <a href="#test-popup" data-effect="mfp-move-horizontal" onClick="ga('send', 'event', [Book], [Preview], [Colossal]);">look inside</a></li>
+                                <a href="#test-popup" data-effect="mfp-move-horizontal" onClick="ga('send', 'event', 'Book', 'Preview', 'Colossal');">look inside</a></li>
                         </ul>
 
                         <!-- Look Inside Content -->
@@ -171,7 +171,7 @@
                         </div>
              		<button class="wow fadeInLeft" data-wow-delay="1.2s">
                             <i class="fa fa-star-o"></i>
-                            <a data-scroll href="#reviews" onClick="ga('send', 'event', [Book], [Reviews], [Colossal]);">Reviews</a>
+                            <a data-scroll href="#reviews" onClick="ga('send', 'event', 'Book', 'Reviews', 'Colossal');">Reviews</a>
                         </button>
                     </div>
 
@@ -187,7 +187,7 @@
 			    "Colossal" unravel something much larger than any of them originally suspected.
                         </p>
 
-                        <a href="https://www.amazon.com/Colossal-Issue-1-Lennox-McCaskill-ebook/dp/B0138ZDKZK/ref=asap_bc?ie=UTF8" target="_blank"><button class="buy-now btn btn-block custom-button" onClick="ga('send', 'event', [Colossal], [Purchase], [Amazon]);">order your copy</button></a>
+                        <a href="https://www.amazon.com/Colossal-Issue-1-Lennox-McCaskill-ebook/dp/B0138ZDKZK/ref=asap_bc?ie=UTF8" target="_blank"><button class="buy-now btn btn-block custom-button">order your copy</button></a>
 
                     </div>
                 </div><!-- End: .container-custom -->
@@ -290,10 +290,10 @@
                     <div id="review-slider" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
                         <div class="col-xs-12">
                             <ol class="carousel-indicators">
-                                <li data-target="#review-slider" data-slide-to="0" class="active wow fadeInLeft" data-wow-delay="0.3s" onClick="ga('send', 'event', [Review], [1st]);">Tania H.</li>
-                                <li data-target="#review-slider" data-slide-to="1" class="wow fadeInLeft" data-wow-delay="0.6s" onClick="ga('send', 'event', [Review], [2nd]);">Martin K.</li>
-                                <li data-target="#review-slider" data-slide-to="2" class="wow fadeInLeft" data-wow-delay="0.9s" onClick="ga('send', 'event', [Review], [3rd]);">Ashley W.</li>
-                                <li data-target="#review-slider" data-slide-to="3" class="wow fadeInLeft" data-wow-delay="1.2s" onClick="ga('send', 'event', [Review], [4th]);">K.M.</li>
+                                <li data-target="#review-slider" data-slide-to="0" class="active wow fadeInLeft" data-wow-delay="0.3s" onClick="ga('send', 'event', 'Review', '1st-review');">Tania H.</li>
+                                <li data-target="#review-slider" data-slide-to="1" class="wow fadeInLeft" data-wow-delay="0.6s" onClick="ga('send', 'event', 'Review', '2nd-review');">Martin K.</li>
+                                <li data-target="#review-slider" data-slide-to="2" class="wow fadeInLeft" data-wow-delay="0.9s" onClick="ga('send', 'event', 'Review', '3rd-review');">Ashley W.</li>
+                                <li data-target="#review-slider" data-slide-to="3" class="wow fadeInLeft" data-wow-delay="1.2s" onClick="ga('send', 'event', 'Review', '4th-review');">K.M.</li>
                             </ol>
                         </div>
                         <!-- Wrapper for slides -->
@@ -435,7 +435,7 @@
 			       She just wants to be normal for a change but is burdened by the superhuman persona the media can't stop talking about. 
 			       She does her best to hide from it all until a new threat captivates Meridian. Soon Katie is pushed back into the spotlight along with an unexpected ally.</p>
                             <p>With the fearful eyes of the city watching on, they must decide if they can put their own obstacles behind them to save the lives in front of them.</p>
-		       <a href="https://www.amazon.com/Afflictions-Colossal-Book-Lennox-McCaskill-ebook/dp/B01KFAZMGG/ref=asap_bc?ie=UTF8" target="_blank"><button class="buy-now btn btn-block custom-button" onClick="ga('send', 'event', [Afflictions], [Purchase], [Amazon]);">order your copy</button></a>
+		       <a href="https://www.amazon.com/Afflictions-Colossal-Book-Lennox-McCaskill-ebook/dp/B01KFAZMGG/ref=asap_bc?ie=UTF8" target="_blank"><button class="buy-now btn btn-block custom-button">order your copy</button></a>
                       
 		       </div>
                        </div>
@@ -466,7 +466,7 @@
                                     <p class="subscription-failed"></p>
                                     <input type="text" name="name" placeholder="Your Name" class="contact-input">
                                     <input type="email" name="email" placeholder="Email Address" class="contact-input">
-                                    <button class="btn btn-block custom-button" onSubmit="ga('send', 'event', [Form], [Subscribe]);">Get A Sneak Peek</button>
+                                    <button class="btn btn-block custom-button" onSubmit="ga('send', 'event', 'Form', 'Subscribe');">Get A Sneak Peek</button>
                                 </form>
                             </div>
 
