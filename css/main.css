@@ -1544,13 +1544,13 @@ a span.img-caption {
 }
 .bonus-price {
     font-size: 16px;
-    color: red;
-    text-decoration: line-through;
+    color: black;
+    
 }
 .bonus-free {
     font-size: 14px;
     margin-left: 10px;
-    color: green;
+    color: #DAA520;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
